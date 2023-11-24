@@ -133,5 +133,15 @@ const Lab5 = (app) => {
         assignment.title = newTitle;
         res.json(assignment);
     });
+    app.get("/a5/assignment/score/:newScore", (req, res) => {
+        const { newScore } = req.params;
+        assignment.score = newScore;
+        res.json(assignment);
+    });
+    app.get("/a5/assignment/completed/:newCompleted", (req, res) => {
+        const { newCompleted } = req.params;
+        assignment.completed = newCompleted;
+        res.json(assignment);
+    })
 }
 export default Lab5;

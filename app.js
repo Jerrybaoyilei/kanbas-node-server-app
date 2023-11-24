@@ -3,7 +3,7 @@ import express from 'express';
 import session from 'express-session';
 import Hello from './hello.js';
 import Lab5 from './lab5.js';
-import CourseRoutes from "./courses/routes.js";
+import CourseRoutes from "./Courses/routes.js";
 import ModuleRoutes from "./Modules/routes.js";
 import cors from "cors";
 
