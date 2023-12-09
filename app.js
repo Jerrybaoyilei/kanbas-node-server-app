@@ -11,6 +11,7 @@ import UserRoutes from "./Users/routes.js";
 
 const CONNECTION_STRING =
     process.env.DB_CONNECTION_STRING || 'mongodb://127.0.0.1:27017/kanbas';
+mongoose.disconnect();
 mongoose.connect(CONNECTION_STRING);
 const OROGIN_URL = process.env.FRONTEND_URL || "http://localhost:3000"
 const app = express();
